@@ -21,7 +21,10 @@ body {
 
 .buttons {
     width: 200px;
-    background: #d0bdf4
+    background: #d0bdf4;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: 16px;
   }
 
 .drawScreen {
@@ -35,12 +38,6 @@ body {
     min-width: 500px;
     max-height: 500px;
     max-width: 500px;
-}
-
-.buttons {
-    flex-shrink: 0;
-    flex-direction: column;
-    padding: 16px;
 }
 
 ul {
