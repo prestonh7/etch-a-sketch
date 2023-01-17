@@ -28,8 +28,7 @@ body {
   }
 
 .drawScreen {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     margin: auto;
     border-style: solid;
     border-color: #a28089;
@@ -38,6 +37,11 @@ body {
     min-width: 500px;
     max-height: 500px;
     max-width: 500px;
+}
+
+.box {
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 ul {
