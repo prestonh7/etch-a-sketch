@@ -7,6 +7,7 @@ confirmSize.addEventListener('click', createGrid);
 
 function createGrid() {
     numSelection = input.value;
+    document.querySelectorAll('.box').forEach(e => e.remove());
     drawScreen.style.gridTemplateColumns = `repeat(${numSelection}, 1fr)`;
     for(let i = 0;i < numSelection*numSelection;i++){
         const square = document.createElement('div');
