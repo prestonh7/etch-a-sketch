@@ -9,14 +9,18 @@
     <script src = "index.js" defer></script>
 </head>
 <body>
-    <div class = "container">
-        <div class = "drawScreen"></div>
+    <div class = "header">Etch-a-sketch</div>
+    <div class = "body">
         <div class = "buttons">
-            <button type="button" id = "pin">Pin</button>
-            <button type="button" id = "eraser">Eraser</button>
-            <input type="range" min="1" max="100" value="50" class="slider" id="size">
-            <button type="button" id = "confirm">Confirm</button>
+            <ul>
+                <li><button type="button" id = "pin">Pin</button></li>
+                <li><button type="button" id = "eraser">Eraser</button></li>
+                <li><p id="rangeValue">50</p></li>
+                <li><input type="range" min="1" max="100" value="50" class="slider" id="size" oninput="rangeValue.innerText = this.value"></li>
+                <li><button type="button" id = "confirm">Confirm</button></li>
+            </ul>
         </div>
+        <div class = "drawScreen"></div>
     </div>
 </body>
 </html>
